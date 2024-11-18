@@ -1,7 +1,7 @@
 <strong><h1 align="center">Portal de Notícias</h1></strong>
 
 <p align="center">
-  <img alt="" src="newsportal-responsive.png" width="100%">
+  <img alt="" src="newspaper-responsive.png" width="100%">
 </p>
 
 ## 🚀 Descrição
