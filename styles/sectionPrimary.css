@@ -1,0 +1,106 @@
+.highlights {
+  display: flex;
+  gap: 1.6rem;
+
+  padding-bottom: 8rem;
+  border-bottom: 1px solid var(--bg-title);
+}
+
+.main {
+  width: 60.8rem;
+  height: 41.6rem;
+  border-radius: 4px;
+  padding: 2.4rem;
+
+  background-image: url(../components/image/Image\ 01.png);
+  background-size: cover;
+  object-fit: cover;
+
+  font: var(--font-headingOne);
+
+  align-content: end;
+}
+
+.main h3,
+.item h3,
+.mostRead h3,
+.space h3 {
+  background-color: var(--background-titles);
+  color: var(--text-color-primary);
+
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: .8rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+
+  text-align: center;
+  display: inline-block;
+}
+
+.highlights .items {
+  display: grid;
+  grid-template-columns: repeat(2, 28.8rem);
+  gap: 1.6rem;
+}
+
+.items .item {
+  align-content: end;
+  padding: 1.2rem;
+  border-radius: 4px;
+
+  font: var(--font-headingThree);
+}
+
+.one {
+  background-image: url(../components/image/Image\ 02.png);
+  background-size: cover;
+  object-fit: cover;
+}
+
+.two {
+  background-image: url(../components/image/Image\ 03.png);
+  background-size: cover;
+  object-fit: cover;
+}
+
+.three {
+  background-image: url(../components/image/Image\ 04.png);
+  background-size: cover;
+  object-fit: cover;
+}
+
+.four {
+  background-image: url(../components/image/Image\ 05.png);
+  background-size: cover;
+  object-fit: cover;
+}
+
+@media (width <  45rem) {
+  .highlights {
+    display: grid;
+    width: 32.8rem;
+  }
+
+  .main {
+    width: 32.8rem;
+    height: 41.6rem;
+    background:  url(../components/mobile/image-1.svg);
+  }
+
+  .highlights .items {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    display: grid;
+    align-items: flex-end;
+    height: 20rem;
+  }
+
+  .item  h3  {
+    width: fit-content;
+  }
+}

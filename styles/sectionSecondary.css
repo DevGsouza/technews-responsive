@@ -1,0 +1,76 @@
+.read {
+  padding-top: 1.2rem;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+#nav a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: var(--text-color-secondary);
+}
+
+#nav span {
+  font: var(--font-link);
+}
+
+.mostRead {
+  display: flex;
+  gap: 1.6rem;
+
+  padding-bottom: 8rem;
+}
+
+.mostRead div {
+  position: relative;
+
+  width: 29.2rem;
+  height: 23.4rem;
+}
+
+.mostRead div h3 {
+  position: absolute;
+  left: .8rem;
+  top: .8rem;
+}
+
+.mostRead div img {
+  width: 29.2rem;
+  height: 16rem;
+}
+
+.mostRead div p,
+.space p {
+  font: var(--font-headingTwo);
+  color: var(--text-color-primary);
+  max-height: 6.6rem;
+  overflow: hidden;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (width <  45rem) {
+  .mostRead {
+    flex-direction: column;
+    width: 32.8rem;
+    padding-bottom: 4rem;
+    
+  }
+
+  .mostRead div {
+    width: 100%;
+    margin-bottom: 3.2rem;
+  }
+
+  .mostRead div img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

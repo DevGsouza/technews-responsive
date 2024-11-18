@@ -1,0 +1,19 @@
+.secondary ul {
+  display: flex;
+  list-style: none;
+  gap: 9.5rem;
+  padding-block: 1.4rem;
+}
+
+.secondary ul a {
+  color: var(--text-color-secondary);
+  font: var(--font-link)
+}
+
+@media (width <  45rem) {
+  .secondary ul {
+    gap: 4.5rem;
+    text-align: center;
+    justify-content: space-between;
+  }
+}

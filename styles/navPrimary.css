@@ -1,0 +1,43 @@
+header .primary {
+  display: flex;
+  align-items: center;
+  padding-block: 2.6rem;
+  gap: 45rem;
+}
+
+.primary .menu,
+.primary .search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+
+  color: var(--text-color-primary);
+  font: var(--font-headingTwo);
+}
+
+.primary h1 {
+  font: var(--font-headingOne);
+  color: var(--color-title);
+  min-width: 16rem;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+@media (width <  45rem) {
+  header .primary {
+    display: flex;
+    gap: 9.4rem;
+  }
+
+  .primary > img {
+    width: 10rem;
+  }
+
+  .menu img,
+  .search img {
+    width: 2rem;
+  }
+}
+

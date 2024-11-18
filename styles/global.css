@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #0f172a;
+  --bg-title: #1e293b;
+
+  --color-title: #60a5fa;
+  --background-titles: #1d4ed8;
+
+  --text-color-primary: #f1f5f1;
+  --text-color-secondary: #cbd5e1;
+
+  --family: "Archivo", sans-serif;
+  --font-headingOne: 800 2.4rem/135% var(--family);
+  --font-headingTwo: 800 1.6rem/140% var(--family);
+  --font-headingThree: 800 1.4rem/140% var(--family);
+  --font-link: 600 1.4rem/145% var(--family);
+  --font-paragraph: 400 1.4rem/160% var(--family);
+  --font-announcement: 300 1rem/100% var(--family);
+  --font-announcementParagraph: 500 1.4rem/160% var(--family);
+}
+
+body {
+  font-family: var(--family);
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
+
+}
+
+.container {
+  width: 121.6rem;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+  font: var(--font-link);
+}
+
+.line {
+  border-bottom: 1px solid var(--bg-title);
+  box-sizing: content-box;
+  width: 128rem;
+  margin-inline: auto;
+
+}
+
+p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.points {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desktop-only {
+  display: inline
+}
+
+@media (width < 45rem){
+  .container {
+    width: 32.8rem;
+    margin-inline: auto;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+ 
+}

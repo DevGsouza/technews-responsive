@@ -1,0 +1,70 @@
+.announcement {
+  margin-top: 4.2rem;
+  border-top: 1px solid var(--bg-title);
+  width: 48.8rem;
+}
+
+.announcement a {
+  color: var(--text-color-secondary);
+}
+
+.threeNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+
+.announcementItem {
+  display: flex;
+  margin-top: 3.2rem;
+  gap: 1.6rem;
+  align-items: center;
+  height: 7.2rem;
+
+}
+
+.announcementItem img {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 4px;
+}
+
+.announcementItem h3 {
+  font: var(--font-announcement);
+  background: var(--background-titles);
+  display: inline;
+
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.announcementItem div p {
+  margin-top: 8px;
+  font: var(--font-announcementParagraph);
+  color: --text-color-primary;
+  height: 4rem;
+  font-weight: 900;
+}
+
+@media (width <  45rem) {
+  .threeNav {
+    width: 32.8rem;
+    
+  }
+
+  .announcement {
+    width: 32.8rem;
+    padding-bottom: 8rem;
+  }
+
+  .threeNav a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .threeNav a img {
+    width: 1.6rem;
+ }
+}
